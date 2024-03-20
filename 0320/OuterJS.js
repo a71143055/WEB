@@ -1,1 +1,1 @@
-alert('OuterScript');
+alert("안녕하세요~ 학생 여러분~");
