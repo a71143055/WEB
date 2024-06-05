@@ -7,12 +7,11 @@
     <Script>
         let date = new Date();
 
-        let nowYear = date.getFullYear();
-        let nowMonth = date.getMonth() + 1;
-        let nowDay = date.getDay();
-        let person = prompt("Please enter your birth:", new Date(1999, 1, 15));
-        let birth = person;
-        alert(nowYear - birth.getFullYear()  + "-" + nowMonth - birth.getMonth() - 1 + "-" + nowDay - birth.getDay());
+        let nowYear = date.setFullYear();
+        let nowMonth = date.setMonth() + 1;
+        let nowDay = date.setDay();
+        let birth = prompt("Please enter your birth:", new Date(1999, 1, 15));
+        alert(nowYear - birth.setFullYear()  + "-" + nowMonth - birth.setMonth() - 1 + "-" + nowDay - birth.setDay());
     </Script>
 </head>
 <body>
