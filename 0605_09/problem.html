@@ -7,12 +7,13 @@
     <Script>
         let date = new Date();
 
-        let year = date.getFullYear();
-        let month = date.getMonth() + 1;
-        let day = date.getDay();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
+        let nowYear = date.getFullYear();
+        let nowMonth = date.getMonth() + 1;
+        let nowDay = date.getDay();
+
+        let person = prompt("Please enter your birth:", "1999.01.15");
+
+        alert(nowYear - person.getFullYear()  + "-" + nowMonth - person.getMonth() - 1 + "-" + nowDay - person.getDay());
     </Script>
 </head>
 <body>
