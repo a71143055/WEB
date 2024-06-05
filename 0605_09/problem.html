@@ -10,10 +10,9 @@
         let nowYear = date.getFullYear();
         let nowMonth = date.getMonth() + 1;
         let nowDay = date.getDay();
-
-        let person = prompt("Please enter your birth:", "1999.01.15");
-
-        alert(nowYear - person.getFullYear()  + "-" + nowMonth - person.getMonth() - 1 + "-" + nowDay - person.getDay());
+        let person = prompt("Please enter your birth:", new Date(1999, 1, 15));
+        let birth = person;
+        alert(nowYear - birth.getFullYear()  + "-" + nowMonth - birth.getMonth() - 1 + "-" + nowDay - birth.getDay());
     </Script>
 </head>
 <body>
