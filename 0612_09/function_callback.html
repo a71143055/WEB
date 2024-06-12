@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function powerTest(x, y) {
-            let result = Math.pow(x,y);
-            return result;
+        function callTenTimes(callback) {
+            for (let i = 0; i < 10; i++) {
+                callback();
+            }
         }
 
-        let num1 = 2;
-        let num2 = 10;
+        let fun = function () {
+            alert('함수 호출');
+        };
 
-        alert(num1 + "(을)를 " + num2 + "제곱한 결과는 " + powerTest(num1, num2));
+        callTenTimes(fun);
     </script>
 </head>
 <body>
