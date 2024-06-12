@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function callTimes(fun, num) {
-            for (let i = 0; i < num; i++) {
-                fun(i+1);
+        function callTenTimes(callback) {
+            for (let i = 0; i < 10; i++) {
+                callback();
             }
         }
 
-        let fun = function(i) {
-            alert('익명함수 호출됨' + i);
-        };
-
-        let num = 7
-        callTimes(fun, num);
+        callTenTimes(function() {
+            alert('함수 호출');
+        })
     </script>
 </head>
 <body>
