@@ -6,11 +6,12 @@
     <title>Document</title>
     <script>
         window.onload = function () {
-            let header = document.querySelector('h1');
-
-            header.style.color = 'orange';
-            header.style.background = 'red';
-            header.innerHTML = 'From JavaScript';
+            let objs = document.querySelectorAll('h1');
+            for(let i = 0; i < objs.length; i++){
+                objs[i].style.color = 'yellow';
+                objs[i].style.background = 'black';
+                objs[i].innerHTML = 'Seoul Jngsu Campus Freshman';
+            }
         };
     </script>
 </head>
