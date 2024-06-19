@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        window.onload = function () {
-            let header = document.getElementById('header');
+        function changeObject() {
+            let obj = document.getElementById('campus');
 
-            header.style.color = 'orange';
-            header.style.background = 'red';
-            header.innerHTML = 'From JavaScript';
+            obj.style.color = 'yellow';
+            obj.style.background = 'black';
+            obj.innerHTML = 'Seoul Jungsu Campus';
         }
     </script>
 </head>
-<body>
-    <h1 id="header">Header</h1>
+<body onload="changeObject()">
+    <h1>한국폴리텍대학</h1>
+    <h1 id="campus">서울 정수캠퍼스 1학년</h1>
+    <h1>인공지능소프트웨어과</h1>
 </body>
 </html>
