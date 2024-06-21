@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>견토피아 | 호텔소개</title>
-    <script src="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <script>
         window.onload = function () {
+            var link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('type', 'text/css');
+            link.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Jua&display=swap');
+            document.head.appendChild(link);
+            
             document.body.style.height = 500;
             document.body.style.width = 1000;
             document.body.style.backgroundRepeat = "no-repeat";
@@ -19,7 +25,7 @@
             telephone.style.fontFamily = "Jua, sans-serif";
             telephone.style.fontWeight = 400;
             telephone.style.fontStyle = normal
-        }
+        };
     </script>
     <style>
         .title1 {
@@ -54,7 +60,7 @@
     </style>
 </head>
 <body>
-    <div class="telephone">
+    <div id="telephone">
         전화번호 : 000-0000-0000
     </div>
     <div class="title1">
