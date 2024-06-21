@@ -4,63 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>견토피아 | 카페소개</title>
-    <script src="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <script>
+        window.onload = function () {
+            var link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('type', 'text/css');
+            link.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Jua&display=swap');
+            document.head.appendChild(link);
+
+            document.body.style.height = "100vh";
+            document.body.style.width = "100wh";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+
+            let telephone = document.getElementById("telephone").style;
+            telephone.top = "0";
+            telephone.marginRight = "0";
+            telephone.fontSize = "30px";
+            telephone.textAlign = "right";
+            telephone.fontFamily = "Jua, sans-serif";
+            telephone.fontWeight = "400";
+            telephone.fontStyle = "normal";
         
+            let title1 = document.getElementById("title1").style;
+            title1.marginTop = "25px";
+            title1.textAlign = "center"
+            title1.fontFamily = "Jua, sans-serif";
+            title1.fontWeight = "400";
+            title1.fontStyle = "normal";
+            title1.display = "flex";
+            title1.justifyContent = "center";
+            title1.alignItems = "Center";
+
+            let title2 = document.getElementById("title2").style;
+            title2.marginTop = "25px";
+            title2.textAlign = "center";
+            title2.fontFamily = "Jua, sans-serif";
+            title2.fontWeight = "400";
+            title2.fontStyle = "normal";
+
+            let img = document.getElementById("img").style;
+            img.marginTop = "25px";
+            img.marginLeft = "auto";
+            img.marginRight = "auto";
+            img.display = "inline-block";
+
+            let div = document.getElementById("div").style;
+            div.textAlign = "center";
+        };
     </script>
-    <style>
-        body {
-            height: 100vh;
-            width: 100vw;
-            background-repeat : no-repeat;
-            background-size: cover;
-        }
-
-        .telephone {
-            top: 0;
-            margin-right: 0;
-            font-size: 30px;
-            text-align: right;
-            font-family: "Jua", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .title1 {
-            margin-top: 25px;
-            text-align: center;
-            font-family: "Jua", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .title2 {
-            margin-top: 25px;
-            text-align: center;
-            font-family: "Jua", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .img {
-            margin-top: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            display: inline-block;
-        }
-
-        .div {
-        text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <div class="telephone">
+    <div id="telephone">
         전화번호 : 000-0000-0000
     </div>
-    <div class="title1">
+    <div id="title1">
         <span><a style="font-size: 100px; color:#3D6200; text-decoration: none" href="견토피아_소개.html">견</a></span>
         <span><a style="font-size: 75px; color: #5E9208; text-decoration: none" href="견토피아_소개.html">토피아</a></span>
         <span style="font-size: 50px; color: #FFFFFF">ㅁㅁㅁㅁㅁㅁㅁㅁㅁ</span>
@@ -76,11 +74,11 @@
         <span style="font-size: 50px; color: #FFFFFF">|</span>
         <span><a style="font-size: 50px; color: #575757; text-decoration: none" href="견토피아_고객지원.html">고객지원</a></span>
     </div>
-    <div class="div">
+    <div id="div">
         <img src="개카페1.jpg" width="720" height="464">
         <img src="개카페2.jpg" width="720" height="464">
     </div>
-    <div class="title2">
+    <div id="title2">
         <span style="font-size: 50px; color: #5E9208">견토피아 - 카페소개</span><br>
         <span style="font-size: 30px; color: #FFFFFF">ㅁ</span><br>
         <span style="font-size: 35px; color: #575757">최고의 바리스타들이 24시간 케어하는 애견카페!</span><br>
