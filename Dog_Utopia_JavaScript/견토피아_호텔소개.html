@@ -11,20 +11,26 @@
             link.setAttribute('type', 'text/css');
             link.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Jua&display=swap');
             document.head.appendChild(link);
-            
-            document.body.style.height = 500;
-            document.body.style.width = 1000;
+
+            document.body.style.height = "100vh";
+            document.body.style.width = "100wh";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundSize = "cover";
 
-            let telephone = document.getElementById("telephone");
-            telephone.style.top = 0;
-            telephone.style.marginRight = 0;
-            telephone.style.fontSize = 30;
-            telephone.style.textAlign = "right";
-            telephone.style.fontFamily = "Jua, sans-serif";
-            telephone.style.fontWeight = 400;
-            telephone.style.fontStyle = normal
+            let telephone = document.getElementById("telephone").style;
+            telephone.top = "0";
+            telephone.marginRight = "s";
+            telephone.fontSize = "30px";
+            telephone.textAlign = "right";
+            telephone.fontFamily = "Jua, sans-serif";
+            telephone.fontWeight = "400";
+            telephone.fontStyle = normal
+        
+            let title1 = document.getElementById("title1").style;
+            title1.marginTop = "25px";
+            title1.textAlign = "center"
+            title1.fontFamily = "Jua, sans-serif";
+            title1.fontWeight = "400";
         };
     </script>
     <style>
