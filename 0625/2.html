@@ -6,7 +6,14 @@
     <title>Document</title>
     <script>
         window.onload = function() {
-
+            let btn1 = document.getElementById('btn1');
+            let btn2 = document.getElementById('btn2');
+            btn1.onclick = function() {
+                document.body.style.backgroundColor = "blue";
+            }
+            btn2.onclick = function() {
+                document.body.style.backgroundColor = "white";
+            }
         };
     </script>
 </head>
